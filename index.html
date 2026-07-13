@@ -1,0 +1,220 @@
+<html>
+    <head>
+        <title>Pagina Web Simples Com Uso de Tags</title>
+    </head>
+    <body>
+        <h1 id="inicio">Meu Aprendizado durante o curso <strong>Formação HTML Web Developer</strong></h1>
+        <h2><a href="https://github.com/Matheus-Soares-Rothje">Site criado por Matheus Soares Rothje</h2>
+        <hr>
+        <h2>Índice</h2>
+
+        <ul>
+            <li><a href="#historia">História da Web</a></li>
+            <li><a href="#clients">O que são Clients</a></li>
+            <li><a href="#servers">O que são Servers</a></li>
+            <li><a href="#linguagem">Linguagem de Programação</a></li>
+            <li><a href="#ferramentas">Ferramentas Utilizadas</a></li>
+            <li><a href="#estrutura">Estrutura Básica do HTML</a></li>
+            <li><a href="#tags">Tags</a></li>
+            <li><a href="#textos">Textos</a></li>
+            <li><a href="#listas">Listas Ordenadas e Não Ordenadas</a></li>
+            <li><a href="#links">Links</a></li>
+        </ul>
+
+        <h2 id="historia">História da Web</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>A evolução dessas tecnologias ocorreu de forma interligada:</p>
+        <ol>
+            <li>
+            <p><strong>Necessidade de Comunicação:</strong></p>
+                <p>O Surgimento do TCP/IP (Anos 1970/80)O Problema: 
+                <p>Na década de 1970, o Departamento de Defesa dos EUA criou a ARPANET, mas logo se deparou com um obstáculo.</p> 
+                <p>Redes diferentes (via rádio, satélite e cabo) não conseguiam conversar entre si.</p>
+                <br><br>
+            </li>
+            <li>
+                <p><strong>A Solução:</strong></p> 
+                <p>Em 1974, os cientistas Vint Cerf e Bob Kahn publicaram um artigo que propunha o protocolo TCP/IP (Transmission Control Protocol / Internet Protocol).</p> 
+                <p>O IP funcionava como um "endereço" para identificar cada computador, e o TCP empacotava as informações para que nada se perdesse na rota.</p> 
+                <p>Em 1º de janeiro de 1983, a ARPANET adotou oficialmente esse protocolo, marcando o nascimento da internet moderna.</p>
+            <br><br>
+            </li>
+
+            <li>
+            <p><strong>A Criação da World Wide Web (1989)</strong></p>
+                <p>O Contexto:</p> 
+                <p>O TCP/IP conectava os computadores, mas acessar dados exigia conhecimentos técnicos complexos (como comandos para transferir arquivos via FTP).</p>
+                <p>A Solução: Em 1989, o cientista britânico Tim Berners-Lee, trabalhando no laboratório europeu CERN, inventou a World Wide Web (WWW).</p> 
+                <p>Ele não criou a internet (que já existia com o TCP/IP), mas sim um sistema fácil de usar baseado em hipertexto.</p>
+                <p>A WWW permitiu que documentos fossem interligados por links clicáveis, formando uma "teia" de informações.</p>
+            <br><br>
+            </li>
+
+            <li>
+            <p><strong>O Nascimento do HTML</strong></p>
+                <p>Para que a WWW funcionasse, Tim Berners-Lee precisou inventar os pilares que conectam a web até hoje:</p>
+                <p>HTML (HyperText Markup Language): A linguagem de marcação que permite criar a estrutura dos documentos e formatar textos e links na tela.</p>
+                <p>HTTP (HyperText Transfer Protocol): O protocolo da camada de aplicação que permite que o navegador (cliente) peça a página e o servidor a entregue.</p>
+                <p>URI/URL: O endereço único de cada página na web.</p>
+                <p>O TCP/IP atua como a infraestrutura invisível (o "transporte"), enquanto o HTML/WWW atua como a interface amigável (a "página" que você enxerga no navegador)</p>
+            <br><br>
+            </li>
+        </ol>
+        <h2 id="clients">O que são Clients</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>Cliente Web (Tecnologia e Programação)</p>
+        <p>No modelo cliente-servidor, é o programa ou dispositivo que "pede" a informação.</p>
+        <p>Navegadores: Exemplos clássicos incluem Google Chrome, Mozilla Firefox, e Microsoft Edge. Eles pedem as páginas web e as traduzem para você ler e interagir.</p>
+        <p>Aplicações e APIs: Qualquer aplicativo de celular ou programa que se conecta à internet para buscar dados é considerado um cliente web.</p>
+
+        <h2 id="servers">O que são Servers</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>Um servidor na web é um sistema computacional (tanto o hardware quanto o software) que armazena arquivos de sites (como HTML, CSS, imagens) e os entrega aos dispositivos dos usuários pela internet, sempre que você digita um endereço ou clica em um link.</p>
+        <p>Para compreender o conceito de forma simples, os servidores desempenham dois papéis essenciais:</p>
+            <p>O Hardware: É um computador físico muito potente, mantido em um data center, que fica ligado 24 horas por dia e conectado à internet de alta velocidade.</p>
+            <p>O Software: É um programa (como o Apache HTTP Server ou o NGINX) que processa as solicitações que chegam dos navegadores web (os chamados clientes), como o Google Chrome ou o Microsoft Edge.</p>
+            <p>Como funciona uma requisição na prática:</p> 
+            <p>O processo ocorre em milissegundos e segue uma lógica de "pedido e resposta":</p> 
+            <p>Solicitação: Quando você digita o endereço de um site no seu navegador e aperta Enter, ele envia um pedido (requisição) pela internet para encontrar o servidor que hospeda aquele site.</p>
+            <p>Processamento: O software servidor recebe essa solicitação, localiza os arquivos corretos do site ou processa as informações necessárias.</p>
+            <p>Resposta: O servidor devolve esses dados para o seu navegador, que traduz os códigos e exibe a página na sua tela.</p>
+
+        <h2 id="linguagem">Linguagem de Programação</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>O que é linguagem de programação e porque html não é linguagem de programação.</p>
+        <p>Uma linguagem de programação é um conjunto de regras e instruções usadas para criar algoritmos e programas. Ela possui lógica própria com tomadas de decisão, variáveis e cálculos. Já o HTML não é uma linguagem de programação, mas sim uma linguagem de marcação.</p>
+        <p>Para compreender as diferenças na prática:</p>
+        <p><strong>O que é uma Linguagem de Programação?</strong></p>
+        <p>É um meio de comunicação usado para dar ordens a um computador. Com ela, você cria sistemas, aplicativos e lógicas de negócios.</p>
+        <p><strong>Características:</strong></p>
+        <p>Possui estruturas condicionais (como se/então ou if/else), estruturas de repetição (loops) e manipulação de dados.</p>
+        <p><strong>Exemplos:</strong> JavaScript, Python e Java.</p>
+        <p><strong>Por que o HTML NÃO é uma linguagem de programação?</strong></p>
+        <p>O HTML (que significa HyperText Markup Language, ou Linguagem de Marcação de Hipertexto) não é uma linguagem de programação porque não possui lógica. Você não consegue programar um cálculo matemático ou uma decisão lógica usando apenas HTML. Ele apenas organiza e dá significado (semântica) ao conteúdo de uma página.</p>
+        <p><strong>O que é o HTML, afinal?</strong></p>
+        <p>É uma linguagem de marcação de texto. Pense nele como o "esqueleto" ou a estrutura básica de um site. Ele usa "tags" (marcações) para instruir o navegador a exibir diferentes elementos.</p>
+        <p><strong>Exemplo de uso:</strong> Em vez de processar uma regra de negócio, ele apenas diz ao navegador: "coloque este texto como um parágrafo aqui" ou "exiba esta imagem".</p>
+        <p>A tríade da internet funciona em conjunto: o HTML estrutura a página, o CSS cuida do visual (estilo) e o JavaScript é a verdadeira linguagem de programação que adiciona a interatividade e a inteligência.</p>
+
+        <h2 id="ferramentas">Ferramentas Utilizadas</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>Durante o curso, duas ferramentas se destacaram como essenciais para o aprendizado e desenvolvimento web: o Console F12 do navegador e o Visual Studio Code (VS Code).</p>
+        <p>O Console F12 e o VS Code são ferramentas complementares. O <strong>VS Code</strong> é a "oficina" onde você escreve e organiza o código do seu site, enquanto o <strong>Console F12</strong> é o "laboratório" dentro do navegador onde você testa, depura e inspeciona esse site em tempo real.</p>
+        <p><strong>Que é o Console (F12)?</strong></p>
+        <p>O Console faz parte das Ferramentas de Desenvolvedor (também chamadas de DevTools) presentes em navegadores como Google Chrome, Microsoft Edge ou Firefox. Ele é acionado ao pressionar a tecla F12 ou clicar com o botão direito na página e escolher "Inspecionar".</p>
+        <p><strong>Como funciona na criação web:</strong></p>
+        <p><strong>Depuração (Debugging):</strong> Permite que programadores usem comandos como \(console\.log()\) para exibir mensagens, rastrear valores de variáveis e verificar se o código está funcionando corretamente.</p>
+        <p><strong>Teste de Código na Hora:</strong> Você pode digitar códigos JavaScript diretamente no console do navegador para ver resultados imediatos, sem precisar alterar seu arquivo original.</p>
+        <p><strong>Exibição de Erros:</strong> Se algo der errado no seu site (como um script quebrado ou falha ao carregar uma imagem), o console exibirá uma mensagem de erro em vermelho para facilitar a identificação do problema.</p>
+        <p><strong>Por que utilizar?</strong></p>
+        <p>Ele é indispensável para diagnosticar e consertar problemas rapidamente. Em vez de adivinhar onde o código falhou, você usa o console para ver exatamente o que está acontecendo "por trás dos panos" no navegador do usuário.</p>
+        <p>O Visual Studio Code (VS Code) é um editor de código-fonte gratuito e de código aberto desenvolvido pela Microsoft. Ele é a principal ferramenta utilizada por programadores globalmente para criar e editar arquivos de programação.</p>
+        <p><strong>Como funciona na criação web:</strong></p>
+        <p><strong>Escrita de Código:</strong> É nele que você digita os códigos HTML, CSS e JavaScript que formam o seu site.</p>
+        <p><strong>Autocompletar e Organização:</strong> Ele possui ferramentas inteligentes que ajudam a autocompletar palavras, indentar (organizar) o código automaticamente e destacar com cores diferentes cada instrução para facilitar a leitura.</p>
+        <p><strong>Extensões:</strong> Você pode instalar complementos gratuitos para ganhar novas funções, como simular o site abrindo ao vivo no navegador conforme você digita.</p>
+        <p><strong>Por que utilizar?</strong></p>
+        <p>O VS Code transforma a criação de sites em um processo muito mais rápido e organizado. Ele avisa quando você esquece uma letra ou pontuação errada antes mesmo de você abrir o site, diminuindo muito o tempo gasto procurando por erros básicos.</p>
+
+        <h2 id="estrutura">Estrutura Básica do HTML</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>A estrutura básica de um documento HTML consiste na declaração do tipo de documento seguida pelas tags html, head (que guarda metadados e configurações) e <body> (onde fica o conteúdo visível).</p>
+        <p>Tudo é organizado através de tags, que geralmente vêm em pares de abertura tag e fechamento /tag.</p>
+        <p>Exemplo de Estrutura Básica:</p>
+        <pre>
+        <code>
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Meu Primeiro Site&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Bem-vindo ao meu site!&lt;/h1&gt;
+                    &lt;p&gt;Este é o meu primeiro parágrafo.&lt;/p&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+        </pre>
+
+    
+        <h2 id="tags">Tags</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>Tags HTML são os blocos de construção básicos de uma página web. Escritas entre os sinais de menor e maior que < >, elas servem como "etiquetas" que dizem ao navegador web como estruturar, organizar e exibir o conteúdo, como textos, imagens e links.</p>
+        <p>Estrutura Básica</p>
+        <p>A maioria das tags funciona em pares: uma tag de abertura que inicia o elemento e uma tag de fechamento que o encerra. A diferença entre elas é apenas uma barra / na tag final.</p>
+        <p>Exemplo pratico:</p>
+        <pre>
+            <code>
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Meu Primeiro Site&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Bem-vindo ao meu site!&lt;/h1&gt;
+                        &lt;p&gt;Este é o meu primeiro parágrafo.&lt;/p&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+
+        <h2 id="textos">Textos</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>Tags de TextoSão usadas para estruturar e dar ênfase ao conteúdo escrito, como parágrafos e negrito.</p> 
+        <p>Elas necessitam de tag de abertura e fechamento para indicar onde a formatação começa e termina Tags HTML.
+        <ul>
+        <li><strong>Parágrafo &lt;p&gt;:</strong> Define um bloco de texto.</li>
+        <li><strong>Negrito &lt;b&gt; ou &lt;strong&gt;:</strong> Deixa o texto em destaque.</li>
+        <li><strong>Itálico &lt;i&gt; ou &lt;em&gt;:</strong> Coloca o texto em formato itálico.</li>
+        </ul>
+    
+        <h2 id="listas">Listas Ordenadas e Não Ordenadas</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>Listas são usadas para organizar informações de forma clara e estruturada. Existem dois tipos principais:</p>
+        <ul>
+            <li><strong>Listas Não Ordenadas &lt;ul&gt;:</strong> Usam marcadores (bolinhas) para cada item.</li>
+            <li><strong>Listas Ordenadas &lt;ol&gt;:</strong> Numeram os itens em sequência.</li>
+        </ul>
+        <p>Exemplo de Lista Não Ordenada:</p>
+        <pre>
+            <code>
+                &lt;ul&gt;
+                    &lt;li&gt;Item 1&lt;/li&gt;
+                    &lt;li&gt;Item 2&lt;/li&gt;
+                    &lt;li&gt;Item 3&lt;/li&gt;
+                &lt;/ul&gt;
+            </code>
+        </pre>
+        <p>Exemplo de Lista Ordenada:</p>
+        <pre>
+            <code>
+                &lt;ol&gt;
+                    &lt;li&gt;Primeiro&lt;/li&gt;
+                    &lt;li&gt;Segundo&lt;/li&gt;
+                    &lt;li&gt;Terceiro&lt;/li&gt;
+                &lt;/ol&gt;
+            </code>
+        </pre>
+        
+        <h2 id="links">Links</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p><strong>Links</strong> são elementos que permitem a navegação entre diferentes páginas ou seções de um site. Eles são criados usando a tag <a> (âncora) e podem apontar para URLs externas, internas ou até mesmo para seções específicas dentro da mesma página.</p>
+        <p>Exemplo de Link Externo:</p>
+        <pre>
+            <code>
+                &lt;a href="https://www.exemplo.com"&gt;Visite o Exemplo&lt;/a&gt;
+            </code>
+        </pre>
+        <p>Exemplo de Link Interno:</p>
+        <pre>
+            <code>
+                &lt;a href="outra_pagina.html"&gt;Ir para Outra Página&lt;/a&gt;
+            </code>
+        </pre>
+        <p>Exemplo de Link para Seção Específica:</p>
+        <pre>
+            <code>
+                &lt;a href="#secao_especifica"&gt;Ir para Seção Específica&lt;/a&gt;
+            </code>
+        </pre>
+
+    </body>
+</html>
